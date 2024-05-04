@@ -105,6 +105,9 @@ nav li:hover {
   margin-top: -1px;
   position: relative;
 }
+.banner-slide{
+  position: relative;
+}
 .ban-img {
   width: 100%;
   display: block;
@@ -167,6 +170,7 @@ nav li:hover {
   position: relative;
   background: url("../images/Place_.png");
   background-size: 100% 100%;
+  margin-top: -4px;
 }
 .stats-section .container {
   position: relative;
@@ -615,6 +619,9 @@ nav li:hover {
   }
   .banner p {
     font-size: 21px;
+    margin: 0 auto;
+    width: 735px;
+    margin-bottom: 20px;
   }
   button {
     width: 160px;
@@ -811,9 +818,7 @@ nav li:hover {
   }
   .banner p {
     font-size: 25px;
-    margin: 0 auto;
     margin-bottom: 35px;
-    width: 735px;
   }
   .banner h1 {
     font-size: 70px;
@@ -972,4 +977,49 @@ nav li:hover {
   }
 
   /* footer section end */
+}
+
+
+
+
+
+
+/* slick */
+.slick-dots {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+}
+.slick-dots li{
+  width: 8px;
+  height: 8px;
+  list-style: none;
+  font-size: 0;
+  background: #667b70;
+  border-radius: 26px;
+
+}
+.slick-dots li.slick-active{
+  background: #c7f0db;
+}
+.slick-dots li button{
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .slick-dots li{
+    width: 16px;
+    height: 16px;
+  }
+  .slick-dots {
+    bottom: 98px;
+  }
+}
+@media (min-width: 1280px) {
+  .slick-dots {
+     bottom: 147px;
+   }
 }
